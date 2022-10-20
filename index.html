@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project on distant reading</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("rainbow2.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+td, th {
+  border: 3px solid #730ca7;
+  text-align: left;
+  padding: 8px;
+}
+
+p, li {
+  text-align: justify;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#description" class="w3-button w3-block w3-black">PROJECT DESCRIPTION</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#analysis" class="w3-button w3-block w3-black">DATA ANALYSIS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#conclusion" class="w3-button w3-block w3-black">CONCLUSIONS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">By Anastasiya Sopyryaeva</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:50px"><em>Distant Reading approach<br>to<br>scholarly articles</em></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">October, 2022</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Description Container -->
+<div class="w3-container" id="description">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PROJECT DESCRIPTION</span></h5>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><a href="#intro" class="w3-button">Introduction</a></p>
+      <p><a href="#rqs" class="w3-button">Research questions</a></p>
+      <p><a href="#theory" class="w3-button">Theoretical framework</a></p>
+      <p><a href="#tech" class="w3-button">Technical framework</a></p>
+      <p><a href="#disclaimer" class="w3-button">Disclaimer</a></p>
+    </div>
+    <div id="intro">
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Introduction</b></h5>
+      <p style="text-align: justify;">This website was created by Anastasiya Sopyryaeva, a student at the University of Bologna, currently enrolled in Master’s Degree Programme in Digital Humanities and Digital Knowledge. The purpose of the website is the project delivery for the course “Digital Text in The Humanities: Theories, Methodologies and Applications” taught by professor Tiziana Mancinelli.</p>
+      <p style="text-align: justify;">The project work is focused on the distant reading approach to literary studies (see theoretical framework). In particular, I have decided to explore datasets containing rich metadata about <strong style="color: #730ca7;">corpora of scholarly articles</strong> on one specific topic: <strong style="color: #730ca7;">sexual orientation, homosexuality</strong>. I have retrieved three datasets belonging to three most distinct disciplines studying the chosen phenomenon: <strong style="color: #730ca7;">social science, religion studies and health studies</strong>. The datasets are separated in order to allow comparative analysis. </p>
+      <p style="text-align: justify;">The topic of sexual orientation is still relevant today. The issue is being discussed in various contexts: state law, social media, medicine and more. The choice of this topic is due to the interest to explore the discourse around sexual orientation in three distinct scientific fields. In particular, which subtopics are related to the topic of sexual orientation, in which contexts sexual orientation has been studied, which issues have been addressed by the chosen disciplines. In addition, the question of how this discourse has been changing over time and field will be explored. </p>
+      <div class="w3-panel w3-leftbar" style="background-color: white;">
+        <p style="text-align: justify;"><i>To sum up, the goal of the project is to perform comparative analysis of the discourse around sexual orientation, homosexuality that has emerged over time in three distinct scientific fields.</i></p>
+      </div>
+    </div>
+
+    <div id="rqs">
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Research questions</b></h5>
+      <p style="text-align: justify;">According to the project goal, the following research questions are formulated.</p>
+      <ol>
+        <li style="text-align: justify; color: #730ca7; font-weight: bold;">In what context is sexual orientation discussed and how does it differ across the chosen fields?</li>
+        <li style="text-align: justify; color: #730ca7; font-weight: bold;">What changes have occurred in the scientific discourse on sexual orientation over time in each field since the first article mentioned?</li>
+      </ol>
+    </div>
+
+    <div id="theory">
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Theoretical framework</b></h5>
+      <p style="text-align: justify;">As a general theoretical framework for the project I chose <strong style="color: #730ca7;">Distant Reading approach</strong>. Distant reading is an approach to the study of literary texts introduced by Franco Moretti. A good definition of distant reading was expressed by Stefan Jänicke (2016): <em>“Distant reading aims to generate an abstract view by shifting from observing textual content to visualizing global features of multiple text(s)”</em>.</p>
+      <p style="text-align: justify;">The idea of this project work arose from the inspiration by Moretti’s distant reading works on literary studies. In his book “Distant reading” Moretti explores literary evolution by applying quantitative data analysis on titles, dates and other data. I have decided to study evolution of one particular topic ‘sexual orientation, homosexuality’ in the field of scientific texts. </p>
+      <p style="text-align: justify;">One of Moretti's main assumptions about the use of distance reading in literary studies is that we cannot answer a number of questions only with the (close) reading. Humans lack the ability to analyze thousands and hundreds of thousands of texts and, moreover, to find reasonable and reliable answers in the texts. Computers help overcome some of the obstacles of close reading.</p>
+      <p style="text-align: justify;">Distant reading is largely associated with the analysis of metadata. Metatdata helps answer various questions such as:</p>
+      <ul>
+        <li>the historical place of individual texts, authors, and genres in relation to a larger literary context;</li>
+        <li>literary production in terms of growth and decline over time or within regions or within demographic groups;</li>
+        <li>literary patterns and lexicons employed over time, across periods, within regions, or within demographic groups;</li>
+        <li>the cultural and societal forces that impact literary style and the evolution of style;</li>
+        <li>the cultural, historical, and societal linkages that bind or do not bind individual authors, texts, and genres into an aggregate literary culture (Matthew L. Jockers, 2013).</li>
+      </ul>
+      <p style="text-align: justify;">Indeed, in the project work, I used metadata information to answer many questions:</p>
+      <ul>
+        <li>How different subtopics were employed over the time?</li>
+        <li>How has the terms frequency changed over time and across the disciplines?</li>
+        <li>How has the articles frequency changed over time and across the disciplines?</li>
+        <li>Could cultural, historical, and societal events facilitate the topic development in the fields?</li>
+      </ul>
+      <p style="text-align: justify;">To conclude theoretical part, I tried to answer professor Mancinelli’s guiding questions to make sure that distant reading approach is applicable in this study.</p>
+      <ol>
+        <li style="text-align: justify;">For texts with which I am already familiar, how can computers help me identify and study interesting things I had not noticed before, or things I had noticed but did not have reasonable means to pursue?</li>
+        <p style="text-align: justify;">Complex text analysis such as topic modeling (presented in Data Analysis part of the report) is able to be conducted only by computers, as it requires the simultaneous study of a large number of words. One could read the articles or their abstracts and assume the classification of the topics, but this would take much more time and would not be as accurate as with the computational power of modern machines. On the other hand, close reading and/or understanding of the domain will help to apply computational methods properly. For example, most clustering/topic modeling methods require one to know in advance and specify the number of clusters for division.</p>
+        <li style="text-align: justify;">How can computers help me identify and understand texts with which I am not familiar with or which I cannot reasonably read?</li>
+        <p style="text-align: justify;">Considering the corpus of texts being studied, computers can help answer quantitative questions that humans are unable to answer simply by reading texts or metadata about texts. It is much faster, more efficient and more reliable to study, for example, frequency distributions (of articles or words) by visualizing them using graphs.</p>
+      </ol>           
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Bibliography</b></h5>
+      <ul>
+        <li>Jockers, M. L. (2013). Macroanalysis: Digital Methods and Literary History</li>
+        <li>Moretti, F. (2005). Graphs, Maps, Trees: Abstract Modelsfor Literary History. London: Verso.</li>
+        <li>Moretti, F. (2013). Distant Reading. London: Verso.</li>
+      </ul>
+    </div>
+
+    <div id="tech">
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Technical framework</b></h5>
+      <p style="text-align: justify;"><strong style="color: #730ca7;">Dataset:</strong> for the analysis I have chosen to work with three different datasets. The datasets were downloaded from JSTOR digital library according to the following settings:</p>
+      <ul>
+        <li><em>key words:</em> ‘sexual orientation’ and ‘homosexuality’ (the topic of sexual orientation was narrowed to homosexuality due to the project goal and research interest);</li>
+        <li><em>language:</em> English (in order to be able to conduct natural language analysis on the whole corpus);</li>
+        <li><em>document type:</em> scientific article (in order to obtain more representative sample);</li>
+        <li><em>publication year:</em> since the first publication available (in order to explore topic evolution);</li>
+        <li><em>filed:</em> 1 - sociology/ 2 - religion studies/ 3 - health studies (in order to conduct comparative analysis).</li>
+      </ul>      
+      <p style="text-align: justify;">Each downloaded dataset contains metadata information on a corpus of scientific articles belonging to one of the three chosen scientific fields (sociology, religion studies and health studies). The datasets do not have the full texts available, however, they contain data on unigrams, bigrams, trigrams and full abstracts which is sufficient to conduct all kinds of analysis needed for the project.    </p>
+      <p style="text-align: justify;"><strong style="color: #730ca7;">Tools:</strong> the datasets were processed and analyzed using Python programming language. </p>
+      <p style="text-align: justify;"><strong style="color: #730ca7;">Methods:</strong> to answer research questions, I applied descriptive statistics on the dataset and various natural language processing techniques on the text corpus. The detailed description of methods can be found in Data Analysis part of the report.</p>
+      <p style="text-align: justify;">All the datasets, python scripts and output results are available on the GitHub page.</p>
+    </div>
+
+    <div id="disclaimer">
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Disclaimer</b></h5>
+      <p style="text-align: justify;"><em>The purpose of this website is to conduct data analysis on datasets containing metadata information on a text corpus of scholarly articles, as an end-of-course project for the "Digital Text in Humanities" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Tiziana Mancinelli.</em> </p>
+      <p style="text-align: justify;"><em>The datasets have been selected for their size and complexity from JSTOR digital library and are used exclusively for educational purpose.</em></p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Data Analysis Container -->
+<div class="w3-container" id="analysis">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DATA ANALYSIS</span></h5>
+    <p style="text-align: justify; color: #730ca7; font-weight: bold;">Datasets description</p>
+    <p style="text-align: justify;">Each of the three datasets used for the project is stored as jsonl file. After quick transformation and cleaning with Python, I obtained 3 dataframes that contain the following metadata information: 'id', 'isPartOf' (venue), 'keyphrase', 'pageCount', 'publicationYear', 'publisher', 'title', 'wordCount', 'unigramCount', 'bigramCount', 'trigramCount', 'abstract', 'creator'.</p>
+    <p style="text-align: justify;">These dataframes are further processed in order to answer research questions.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><a href="#RQ1" class="w3-button">Research question 1</a></p>
+      <p><a href="#RQ2" class="w3-button">Research question 2</a></p>
+    </div>
+
+    <div id="RQ1">
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Research question 1</b></h5>
+      <p class="w3-center w3-wide" style="color: #730ca7; background-color: white; font-style: italic; padding: 20px;">In what context is sexual orientation discussed and how does it differ across the chosen fields?</p>
+      <p style="text-align: justify;">More detailed guiding questions were formulated to answer RQ1:</p>
+      <br>
+      <hr style="border: 2px solid #730ca7; margin-top: 2em;">
+      <ul>
+        <li>How popular is the topic of sexual orientation in each field? </li>
+      </ul>
+      <p style="text-align: justify;">First, let's look at the percentage of articles discussing sexual orientation among all articles published since the mid-twentieth century. For each field.</p>
+      
+      <table>
+        <tr>
+          <th>Field</th>
+          <th>Publication years</th>
+          <th>N of articles (overall)</th>
+          <th>N of articles (with key words "sexual orientation" and "homosexuality")</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>Religion</td>
+          <td>1974-2020</td>
+          <td>254 205</td>
+          <td>557</td>
+          <td>0,22%</td>
+        </tr>
+        <tr>
+          <td>Health</td>
+          <td>1966-2022</td>
+          <td>2 672 865</td>
+          <td>1 358</td>
+          <td>0,05%</td>
+        </tr>
+        <tr>
+          <td>Social</td>
+          <td>1967-2021</td>
+          <td>689 300</td>
+          <td>8 999</td>
+          <td>1,31%</td>
+        </tr>
+      </table>      
+      <figcaption><b>Table.1 Articles’ frequencies.</b></figcaption>
+      <p style="text-align: justify;">From the column ‘Percentage’ (Table 1.), it is clear, that for the social science field, the problem of sexuality is the most relevant.</p>
+      <br>
+      <hr style="border: 2px solid #730ca7; margin-top: 2em;">
+      <ul>
+        <li>What fields contribute the most in the topic exploration?</li>
+      </ul>      
+      <p style="text-align: justify;">By calculating the percentage of presence of each area in the studied dataset, it can be seen that, again, the social sciences contribute the most - 54% (Table 2).</p>
+      <table>
+        <tr>
+          <th>Field</th>
+          <th>N of articles in the final dataset</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>Religion</td>
+          <td>161</td>
+          <td>16%</td>
+        </tr>
+        <tr>
+          <td>Health</td>
+          <td>297</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>Social</td>
+          <td>546</td>
+          <td>54%</td>
+        </tr>
+      </table> 
+      <figcaption><b>Table 2. Articles’ frequencies in the final cleaned dataset</b></figcaption>      
+      <br>
+      <hr style="border: 2px solid #730ca7; margin-top: 2em;">
+      <ul>
+        <li>What subtopics correlate with the main one in each field? What are their weights?</li>
+      </ul>       
+      <p style="text-align: justify;">To answer this question, one need to dive into the texts’ content by applying different types of natural language processing (NLP). For this purpose, I have chosen Python programming language because it has various libraries particularly developed to work with texts and solve NLP tasks.</p>
+      <p style="text-align: justify;">The studied metadata datasets contain articles’ abstracts and n-grams. This allows to explore the texts’ content properly and to perform topic analysis.</p>
+      <p style="text-align: justify;">Firstly, let’s perform word frequency analysis. Table 3. represents the most frequent words appearing across the texts for each scientific field. </p>
+      
+      <table>
+ <tr>
+  <td colspan=2 style="color: #730ca7;"><b>Religion studies</b></td>
+  <td colspan=2 style="color: #730ca7;"><b>Health studies</b></td>
+  <td colspan=2 style="color: #730ca7;"><b>Social science</b></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl6826756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>Term</span></td>
+  <td class=xl6926756 width=96 style='width:72pt'><span lang=EN-US>Frequency</span></td>
+  <td class=xl7426756 width=124 style='width:93pt'><span lang=EN-US>Term</span></td>
+  <td class=xl7426756 width=97 style='width:73pt'><span lang=EN-US>Frequency</span></td>
+  <td class=xl7826756 width=142 style='width:107pt'><span lang=EN-US>Term</span></td>
+  <td class=xl7826756 width=101 style='width:76pt'><span lang=EN-US>Frequency</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'men'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1725</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'men'/'male'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>4729/1871</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'men'/'male'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>8781/4718</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'women'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1412</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'women'/'female'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>3501/1264</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'gender'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>6986</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'rights'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1251</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'mental'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>3156</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'sex'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>5278</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'members'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1186</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'risk'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>3132</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'women'/'female'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>5245/2244</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'catholic'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1186</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'sex'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>2848</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'identity'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>5062</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'american'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1171</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'bisexual'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>2815</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'health'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>4086</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'sex'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1126</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'HIV'/'AIDS'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>2597/2116</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'family'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>3918</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'identity'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1119</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'gender'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>2505</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'work'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>3591</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'marriage'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>1068</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'minority'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>2049</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'american'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>3377</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'clergy'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>945</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'care'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1942</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'public'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2895</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'african'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>942</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'american'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1793</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'school'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2759</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'community'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>926</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'support'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1758</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'group'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2733</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'bible'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>887</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'behavior'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1521</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'bisexual'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2726</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'black'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>877</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'drug'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1485</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'support'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2600</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'moral'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>870</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'youth'/'young'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1478/1148</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'students'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2565</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'groups'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>852</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'identity'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1439</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>experience'/es</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2469/2448</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'male'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>851</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'lgbt'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1374</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'relationship'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2459</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'biblical'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>848</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'age'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1366</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'religious'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2415</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'gender'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>847</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'public'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1337</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'queer'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2395</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'way'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>837</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'psychological'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1296</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'children'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2388</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'public'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>831</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'students'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1261</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'different'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2381</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'united'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>817</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'family'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1230</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'rights'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2291</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'life'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>808</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'school'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1227</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'community'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2267</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'anglican'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>806</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'education'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1219</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'discrimination'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2249</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'group'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>788</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'national'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1209</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'youth'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2206</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'work'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>766</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'treatment'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1171</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'life'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2203</span></td>
+ </tr>
+ <tr height=42 style='height:31.8pt;'>
+  <td height=42 class=xl7026756 width=96 style='height:31.8pt;width:72pt'><span
+  lang=EN-US>'congregations'<span>&nbsp;</span></span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>736</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'relationship'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1100</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'political'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2130</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'family'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>733</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'community'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1067</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'lgbt'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2087</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'political'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>717</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'discrimination'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1054</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'behavior'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2077</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'different'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>708</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'depression'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1047</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'cultural'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>2050</span></td>
+ </tr>
+ <tr height=22 style='height:16.2pt;'>
+  <td height=22 class=xl7026756 width=96 style='height:16.2pt;width:72pt'><span
+  lang=EN-US>'support'</span></td>
+  <td class=xl7126756 width=96 style='width:72pt'><span lang=EN-US>706</span></td>
+  <td class=xl7526756 width=124 style='width:93pt'><span lang=EN-US>'suicide'</span></td>
+  <td class=xl7526756 width=97 style='width:73pt'><span lang=EN-US>1008</span></td>
+  <td class=xl7926756 width=142 style='width:107pt'><span lang=EN-US>'minority'</span></td>
+  <td class=xl7926756 width=101 style='width:76pt'><span lang=EN-US>1987</span></td>
+ </tr>
+</table>
+<figcaption><b>Table 3. Words frequencies per field</b></figcaption>      
+
+<br>  
+<br>   
+<br>       
+      <p style="text-align: justify;">In addition, let’s visualize the relative term frequencies with word clouds.</p>
+      <img src="cloud_uni_religion.png" class="w3-image" style="width:100%">
+      <figcaption><b>Picture 1. Word Cloud (Religion studies dataset)</b></figcaption>
+      <br>   
+      <br>
+      <img src="cloud_uni_health.png" class="w3-image" style="width:100%">
+      <figcaption><b>Picture 2. Word Cloud (Health studies dataset)</b></figcaption>
+      <br>   
+      <br>
+      <img src="cloud_uni_social.png" class="w3-image" style="width:100%">
+      <figcaption><b>Picture 3. Word Cloud (Social science dataset)</b></figcaption>
+      <br>   
+      <br>      
+      <p style="text-align: justify;">By looking at the most frequent terms it is already possible <em><u>to assume what might be</u></em> the main subtopics that arise in each of the three disciplines around the main topic of sexual orientation. </p>
+      
+      <button onclick="accordion('religion_f_list')" class="w3-btn w3-block w3-left-align w3-border w3-round-xxlarge">For religion studies:</button>
+      <div id="religion_f_list" class="w3-container w3-hide">
+      <ul>
+        <li><b>Gender.</b>Words indicating gender appear the most often: ‘men’, ‘male’, ‘women’, ‘gender’. Their frequency, however, is not equal: words related to male gender (‘men’, ‘male’) appear almost twice more often, than female gender.</li>
+        <li><b>Rights.</b> ‘Rights’ is the third most common term. Together with the term ‘political’, it constitutes the subtopic: rights.</li>
+        <li><b>Community.</b> Such terms as ‘members’, ‘community’, ‘group’, ‘groups’, ‘congregations’, ‘united’ point at the subtopic ‘community issues’.</li>
+        <li><b>Identity.</b> Being the eighth most common word, ‘identity’ forms separate important subtopic.</li>
+        <li><b>Family.</b> It is crucial topic for religion. Problems of homosexuality are discuss with family issues as well: terms ‘marrige’, ‘family’</li>
+        <li><b>Race and nationality.</b> Terms such as ‘african’, ‘american’ and ‘black’ are included in the high frequency list.</li>
+      </ul>
+      </div>
+
+      <button onclick="accordion('health_f_list')" class="w3-btn w3-block w3-left-align w3-border w3-round-xxlarge">For health studies:</button>
+      <div id="health_f_list" class="w3-container w3-hide">
+      <ul>
+        <li><b>Gender.</b> The most frequent words belong to the gender subtopic: 'men', 'women'.</li>
+        <li><b>Risk.</b> The second major subtopic for health studies might be 'Risk'. Words: 'risk', 'infection', 'HIV', 'AIDS'.</li>
+        <li><b>Identity.</b> Words associated with a person's identity also have a high frequency in the health studies dataset: 'minority', 'identity', 'lgbt'.</li>
+        <li><b>Education.</b> There are many high frequency words associated with education and youth: 'students', 'school', 'education', 'youth', 'age'.</li>
+      </ul>
+      </div>
+
+      <button onclick="accordion('social_f_list')" class="w3-btn w3-block w3-left-align w3-border w3-round-xxlarge">For social science:</button>
+      <div id="social_f_list" class="w3-container w3-hide">
+      <ul>
+        <li><b>Gender.</b> Gender-related words are at the top of the frequency list also for the social sciences dataset: 'gender', 'men', 'women'.</li>
+        <li><b>Identity.</b> Self-identification of people is a very important topic for the social sciences. The word 'identity' has the second importance in the frequency list.</li>
+        <li><b>Health.</b> Surprisingly, the word 'health' has a high frequency in the social sciences dataset and could potentially be one of the subtopics.</li>
+        <li><b>Family.</b> As the most important primary social institution, the word 'family' occurs with high frequency.</li>
+        <li><b>School.</b> As the most important secondary social institution, the words 'school', 'students' occur with high frequency.</li>
+        <li><b>Rights.</b> Sexual orientation is also discussed in terms such as 'rights', 'minority', 'discrimination'.</li>
+      </ul>
+      </div>
+
+      <br>
+      <p style="text-align: justify;">Further, one may be interested in a more detailed exploration of the subtopics. By applying <b>LDA (Latent Dirichlet Allocation)</b>, one of the most popular topic modeling techniques, it is possible to divide the texts into groups of different sizes, and extract the most important terms from those groups. <em><u>It helps not only to obtain word frequencies but to see what terms appear together and identify more precise subtopics.</u></em></p>
+      <p style="text-align: justify;">LDA topic modeling requires number of topics to be indicated in advance. Therefore, number of topics for the modeling has been chosen based on frequency list, coherence score calculations and researcher’s expertise in social science.</p>
+      <p style="text-align: center;"><b>RELIGION STUDIES TOPICS</b></p>
+      <p style="text-align: justify;">Click <a href="LDA_Visualization_religion.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for religion studies dataset.</p>
+      <p style="text-align: justify;">The religion studies dataset was divided into 5 topics. The first two are the biggest ones. Coherence Score:  -0.3652</p>
+      <ul>
+        <li><b>Subtopic 1: Family.</b> The first topic discuss important for religion concept of family, marriage, love, moral principles.  </li>
+        <li><b>Subtopic 2: Identity. </b>The second one, according to the terms set discusses person’s identity, membership, sense of belonging to a particular community.</li>
+        <li><b>Subtopic 3: Gender. </b>The third topic is probably discussing the gender problems in more detail. </li>
+        <li><b>Subtopic 4: Rights.</b> Even if the term ‘rights’ is present in every topic with high frequency, the fourth group is discussing it the most, together with terms ‘civil’ and ‘public’.  </li>
+        <li><b>Subtopic 5: Female issues. </b>The smallest fifth group unites articles on female social group issues. </li>
+      </ul>
+
+      <p style="text-align: center;"><b>HEALTH STUDIES TOPICS</b></p>
+      <p style="text-align: justify;">Click <a href="LDA_Visualization_health.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for health studies dataset.</p>
+      <p style="text-align: justify;">The health studies dataset was divided into 5 topics. The first is the biggest one. Coherence Score:  -0.5009</p>
+
+      <ul>
+        <li><b>Subtopic 1: Care. </b>The first and biggest subtopic. The coexistence of words such as 'care', 'work', 'education', 'training', 'services' indicates the prevalence of discussions about educating people on sexual orientation theme.</li>
+        <li><b>Subtopic 2: Risk of mental health issues. </b>The second subtopic is related to issues such as 'risk', 'suicide', 'depression'. These problems stand together with the words 'school' and 'youth'.</li>
+        <li><b>Subtopic 3: Risk of physical health problems. </b>The third subtopic includes words related to risk: 'risk', 'infection' and to treatment: 'drug', 'treatment'.</li>
+        <li><b>Subtopic 4: Discrimination. </b>The fourth subtopic discusses gender issues along with issues of identity and discrimination.</li>
+        <li><b>Subtopic 5: Gender. </b>The fifth subtopic contains many gender words that occur together.</li>
+      </ul>
+
+      <p style="text-align: center;"><b>SOCIAL SCIENCE TOPICS</b></p>
+      <p style="text-align: justify;">Click <a href="LDA_Visualization_social.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for social science dataset.</p>
+      <p style="text-align: justify;">The social science dataset was divided into 7 topics of almost equal sizes. The first two topics are overlapping according to the model. Coherence Score:  -0.5470</p>
+
+      
+      <ul>
+        <li><b>Subtopic 1: Gender identity. </b>Gender issues is the biggest subtopic in the social science dataset. The words ‘men’ and ‘women’ appear in most of the subtopics. However, we will identify a separate subtopic for the issue.</li>
+        <li><b>Subtopic 2: Religion. </b>Religion was modeled as a separate subtopic with the words 'religious', 'christian', 'church'.</li>
+        <li><b>Subtopic 3: Rights. </b>Speaking of LGBT community, the issue of fighting for group rights and against discrimination is of great importance.</li>
+        <li><b>Subtopic 4: Health. </b>The fourth subtopic may deal with health and support issues.</li>
+        <li><b>Subtopic 5: Marriage. </b>There is one clear subtopic related to questions of marriage and parenthood.</li>
+        <li><b>Subtopic 6: School. </b>The subtopic discusses sexual orientation in terms of 'youth', 'school', 'education'</li>
+        <li><b>Subtopic 7: Work. </b>One of the topics contains words such as 'work', 'workplace', 'development', 'behavior' and is likely to address issues that people may encounter at work in connection with their sexual orientation.</li>
+      </ul>
+      <br>
+      <hr style="border: 2px solid #730ca7; margin-top: 2em;">
+      <br>
+
+      <div style="border-radius: 15px 50px; border: 3px solid black; padding: 2em;">
+      <p style="text-align: center;"><b>CONCLUSION RQ 1:</b></p>
+      <p style="text-align: justify;">Half of the whole dataset belong to social sciences, which includes psychology, sociology, behavioral studies. It is not surprising, because these disciplines aim to study people’s behavior. Such a sensitive human characteristic as sexual orientation needs to be well studied both from the point of psychology which analyses people’s mind and from the point of view of sociology which analyses social contexts of people’s behavior. </p>
+      <p style="text-align: justify;">All three datasets discuss sexual orientation in the context of gender and identity to some extent. It is expected to be one of the main subtopics of the studied corpora, as sexual orientation itself is an issue of identity and is closely related to gender and gender identity.</p>
+      <p style="text-align: justify;">Health studies address a lot the risks that are probably associated with a non hetero sexual orientation choice. There are risks of physical and mental health problems, as well as social risks such as discrimination. The largest subtopic of this data set: 'Care' indicates that scientists were discussing the issue of educating people about sexual orientation in order to prevent the risks.</p>
+      <p style="text-align: justify;">According to the analysis, for religion studies, the issues of family and civil marriage prevail in the context of sexual orientation.</p>
+      <p style="text-align: justify;">The corpus of texts of social science, as the largest, was divided into 7 subtopics, which basically included all the contexts defined above: gender, identity, rights, health, religion. In addition, it addresses the questions of marriage, school and work as important institutions for socialization.</p>
+      <p style="text-align: justify;"></p>
+      </div>
+
+    </div>
+
+    <div id="RQ2">
+      <h5 class="w3-center w3-wide" style="padding-top: 64px;"><b>Research question 2</b></h5>
+      <p class="w3-center w3-wide" style="color: #730ca7; font-style: italic; padding: 20px; background-color: white;">What changes have occurred in the scientific discourse on sexual orientation over time since the first article mentioned?</p>
+      <p style="text-align: justify;">More detailed guiding questions were formulated to answer RQ2:</p>
+      <br>
+      <hr style="border: 2px solid #730ca7; margin-top: 2em;">
+      <ul>
+        <li>How is the frequency of articles distributed on the timeline in each field and overall?</li>
+      </ul>
+      <p style="text-align: justify;">This question is possible to answer by drawing the plot of articles frequencies by publication year.</p>      
+      <p style="text-align: justify;">The first articles on homosexuality appear for each field at about the same period: second half of the 20th century: 19560-1970.</p>
+      <p style="text-align: justify;"><b>For the religion studies,</b> the first rise of the topic was in 1998, the second one in 2008; both times the number of articles was doubled compared to the previous annual frequency. The sharp decline in the articles' frequency occured in 2017 when it dropped from 13 to 2 articles per year and remained the same untill 2020.</p>
+      <img src="docs_by_year_religion.png" class="w3-image" style="width:100%">
+      <figcaption><b>Picture 4. Plot of articles' frequencies by publication year (religion studies)</b></figcaption>
+      <br>
+      <br>
+      <p style="text-align: justify;"><b>For the health studies,</b> the frequency of articles on sexual orientation ranged from 1 to 5 articles per year until 1989, when it was 6. In 1991, there were already 9 articles published, but later the frequency dropped again to 3-7 articles per year. The first noticeable rise occurred only in 2012 - about 13 articles, then in 2016 - 25 articles. In 2017-2020, 10-15 articles were published per year, then only 2 in 2021.</p>
+      <img src="docs_by_year_health.png" class="w3-image" style="width:100%">
+      <figcaption><b>Picture 5. Plot of articles' frequencies by publication year (health studies)</b></figcaption>
+      <br>
+      <br>
+      <p style="text-align: justify;"><b>For the social sciences,</b> a small fluctuation of 1-6 articles published per year occurred until about 1997, when the number of articles reached 10. Since 1997, the development of the topic has experienced a rapid upswing. 15 publications in 2000, 26 in 2004. A gradual decline until 2008, then again a smooth increase with a peak of 30 articles in 2015. In recent years, there has been a slight fluctuation between 15-25 articles per year and only 1 article in 2021.</p>
+      <img src="docs_by_year_social.png" class="w3-image" style="width:100%">
+      <figcaption><b>Picture 6. Plot of articles' frequencies by publication year (social science)</b></figcaption>
+      <p style="text-align: justify;"></p>
+      <br>
+      <br>
+      <hr style="border: 2px solid #730ca7; margin-top: 2em;">
+      <ul>
+        <li>How different are the subtopics and their proportions over the course of time and field?</li>
+      </ul>
+      <p style="text-align: justify;">Now let's see how and when the subtopics defined in RQ1 came about. In other words, what is their distribution on the timeline. To answer this question, I divided the dataframes into several subdataframes according to changes in the frequency distribution of articles by year of publication. I then created a list of word frequencies for each of the subdataframes to see which contexts were dominant in a given time period.</p>
+      <br>
+      <p style="text-align: justify;"><b>For religion studies</b> dataset I obtained 6 subdataframes. Their highly frequent words are represented in a table below.  </p>
+
+      <table>
+
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1529432 width=84 style='height:15.0pt;width:63pt'><b>1974-1995</b></td>
+  <td class=xl1529432 width=78 style='width:58pt' style="color: #730ca7;"><b>1996-2002</b></td>
+  <td class=xl1529432 width=80 style='width:60pt' style="color: #730ca7;"><b>2003-2007</b></td>
+  <td class=xl1529432 width=80 style='width:60pt' style="color: #730ca7;"><b>2008-2012</b></td>
+  <td class=xl1529432 width=80 style='width:60pt' style="color: #730ca7;"><b>2013-2016</b></td>
+  <td class=xl1529432 width=80 style='width:60pt' style="color: #730ca7;"><b>2017-2020</b></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6529432 width=84 style='height:15.0pt;width:63pt'> 'men', 'male'</span></td>
+  <td class=xl6629432 width=78 style='width:58pt'>  'men'</span></td>
+  <td class=xl6629432 width=80 style='width:60pt'>  'women'</span></td>
+  <td class=xl6629432 width=80 style='width:60pt'>  'black'</span></td>
+  <td class=xl6629432 width=80 style='width:60pt'>  'rights'</span></td>
+  <td class=xl6529432 width=80 style='border-left:none;width:60pt'> 'resolution'</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6729432 width=84 style='height:15.0pt;width:63pt'> 'women'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'united'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'members'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'women'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'african'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'lgbt'</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6729432 width=84 style='height:15.0pt;width:63pt'> 'father'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'members'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'assembly'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'rights'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'men'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'love'</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6729432 width=84 style='height:15.0pt;width:63pt'> 'identity'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'community'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'uniting'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'men'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'sex'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'marriage'</span></td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl6729432 width=84 style='height:29.4pt;width:63pt'> 'group'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'groups'/'group'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'national'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'identity'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'gender'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'african'</span></td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl6729432 width=84 style='height:29.4pt;width:63pt'> 'students'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'identity'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'congregations'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'marriage'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'women'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'identity'</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6729432 width=84 style='height:15.0pt;width:63pt'> 'dignity'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'marriage'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'history'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'american'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'queer'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'american'</span></td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl6729432 width=84 style='height:29.4pt;width:63pt'> 'members'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'authority'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'interpretation'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'sex'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'marriage'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'desire'</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6729432 width=84 style='height:15.0pt;width:63pt'> 'groups'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'rights'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'debate'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'members'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'identity'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'world'</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6729432 width=84 style='height:15.0pt;width:63pt'> 'society'</span></td>
+  <td class=xl6829432 width=78 style='width:58pt'>  'family'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'parents'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'african'</span></td>
+  <td class=xl6829432 width=80 style='width:60pt'>  'lgbt'</span></td>
+  <td class=xl6729432 width=80 style='border-left:none;width:60pt'> 'movement'</span></td>
+ </tr>
+</table>
+<figcaption><b>Table 4. High frequency words by time period (religion studies)</b></figcaption>
+
+
+      <p style="text-align: justify;">In 1974-1995, before the first increase in the frequency of articles, religious studies discussed sexual orientation in terms of family ("father") and issues of identity. Interestingly, males were mentioned twice as often as females.
+      In 1996 – 2002 subtopic ‘community’ clearly dominated. In addition, important concepts of ‘rights’ and ‘marriage’ appear more often.
+      In 2008-2012, at the second peak of the frequency distribution of articles, there is a dominance of such words as "black", still "rights" and "identity".
+      In 2013-2016, along with the subtopics of previous time periods, new important concepts are increasingly appearing: “LGBT” and “queer”.
+      In 2017 – 2020 when frequency distribution experience decreased, religion studies discussed sexual orientation in context of ‘love’, 'desire' and ‘marriage’.</p>
+      <p style="text-align: justify;"></p>
+      <br>  
+      <p style="text-align: justify;"><b>For health studies</b> dataset I obtained 5 subdataframes. Their highly frequent words are represented in a table below.  </p>
+      <table>
+ <col width=77 span=5>
+ <tr height=22 style='height:16.2pt'>
+  <td height=22 class=xl632302 width=77 style='height:16.2pt;width:58pt; color: #730ca7; font-weight: bold;'>1966-1988</td>
+  <td class=xl632302 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>1989-2000</td>
+  <td class=xl632302 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>2001-2007</td>
+  <td class=xl632302 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>2008-2015</td>
+  <td class=xl632302 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>2016-2022</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl642302 width=77 style='height:29.4pt;width:58pt'>'male'/'men'</td>
+  <td class=xl642302 width=77 style='border-left:none;width:58pt'>'aids'</td>
+  <td class=xl642302 width=77 style='border-left:none;width:58pt'>'women'</td>
+  <td class=xl642302 width=77 style='border-left:none;width:58pt'>'women'</td>
+  <td class=xl642302 width=77 style='border-left:none;width:58pt'>'men'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl652302 width=77 style='height:29.4pt;width:58pt'>drug'/'treatment'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'men'/'male'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'risk'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'men'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'gender'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl652302 width=77 style='height:15.0pt;width:58pt'>'aids'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'hiv'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'men'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'risk'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'risk'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl652302 width=77 style='height:29.4pt;width:58pt'>'behaviour'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'women'/'female'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'sex'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'minority'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'minority'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl652302 width=77 style='height:15.0pt;width:58pt'>'risk'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'risk'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'hiv'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'lgbt'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'women'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl652302 width=77 style='height:29.4pt;width:58pt'>'women'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'behavior'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'drug'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'identity'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>care'/'support'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl652302 width=77 style='height:29.4pt;width:58pt'>'hiv'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'support'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'mental'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>school'/'students'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'youth'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl652302 width=77 style='height:29.4pt;width:58pt'>disease'/'infection'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'infection'</td>
+  <td class=xl652302 width=77 style='border-left:none;width:58pt'>'aids'</td>
+  <td class=xl662302>'behavior'</td>
+  <td class=xl652302 width=77 style='width:58pt'>'depression'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl662302 style='height:15.0pt'>'problems'</td>
+  <td class=xl662302>'partners'</td>
+  <td class=xl652302 width=77 style='width:58pt'>'behavior'</td>
+  <td class=xl662302>'hiv'</td>
+  <td class=xl662302>'hiv'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl662302 style='height:15.0pt'>'alcohol'</td>
+  <td class=xl662302>'students'</td>
+  <td class=xl652302 width=77 style='width:58pt'>'care'</td>
+  <td class=xl662302>'support'</td>
+  <td class=xl662302>'identity'</td>
+ </tr>
+</table>
+<figcaption><b>Table 5. High frequency words by time period (health studies)</b></figcaption>
+
+
+  <p style="text-align: justify;">Before the topic of sexual orientation was first brought up in 1989, sexual orientation was mostly discussed in health studies in the context of disease risks (HIV, alcohol, infections, problems) and the need for treatment (drugs, treatment). In the 1990s, the focus shifted towards help and support (aids, support). The next notable change in discourse occurred in 2008, when medical studies discuss sexual orientation in the context of identity, minority groups (LGBT, identity, minority), mental problems (depression).</p>
+  <br>
+  <p style="text-align: justify;"><b>For social science</b> dataset I obtained 5 subdataframes. Their highly frequent words are represented in a table below.  </p>
+
+<table>
+ <col width=77 span=5>
+ <tr height=22 style='height:16.2pt'>
+  <td height=22 class=xl633962 width=77 style='height:16.2pt;width:58pt; color: #730ca7; font-weight: bold;'>1967-1996</td>
+  <td class=xl633962 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>1997-2003</td>
+  <td class=xl633962 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>2004-2008</td>
+  <td class=xl633962 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>2009-2016</td>
+  <td class=xl633962 width=77 style='width:58pt; color: #730ca7; font-weight: bold;'>2017-2021</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl643962 width=77 style='height:29.4pt;width:58pt'>'sex'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'identity'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'sex'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'identity'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'identity'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl643962 width=77 style='height:29.4pt;width:58pt'>'american'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'family'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'work'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'sex'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'family'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl643962 width=77 style='height:15.0pt;width:58pt'>'family'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'american'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'health'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'health'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'health'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl643962 width=77 style='height:29.4pt;width:58pt'>'public'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'sex'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'identity'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'work'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'minority'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl643962 width=77 style='height:15.0pt;width:58pt'>'children'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'work'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'queer'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'family'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'youth'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl643962 width=77 style='height:29.4pt;width:58pt'>'behavior'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'public'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'students'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'school'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'sex'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl643962 width=77 style='height:29.4pt;width:58pt'>'aids'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'community'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'behavior'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'lgbt'</td>
+  <td class=xl643962 width=77 style='border-left:none;width:58pt'>'queer'</td>
+ </tr>
+ <tr height=39 style='height:29.4pt'>
+  <td height=39 class=xl653962 style='height:29.4pt'>'support'</td>
+  <td class=xl653962>'children'</td>
+  <td class=xl653962>'school'</td>
+  <td class=xl653962>'support'</td>
+  <td class=xl653962>'black'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl653962 style='height:15.0pt'>'work'</td>
+  <td class=xl653962>'health'</td>
+  <td class=xl653962>'public'</td>
+  <td class=xl653962>'discriminati<span style='display:none'>on'</span></td>
+  <td class=xl653962>'religious'</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl653962 style='height:15.0pt'>'health'</td>
+  <td class=xl653962>'female'</td>
+  <td class=xl653962>'political'</td>
+  <td class=xl653962>'youth'</td>
+  <td class=xl653962>'support'</td>
+ </tr>
+</table>
+<figcaption><b>Table 6. High frequency words by time period (social science)</b></figcaption>
+
+    <p style="text-align: justify;">Discourse changes in the corpus of social science texts are not so obvious. Issues such as gender, family, identity, health and support were always discussed. At the beginning of the 21st century, one can observe the predominance of such subtopics as school and students. Another change concerns terminology: instead of the words “community”, we see “LGBT”, “queer”.</p>
+
+    <br>
+    <hr style="border: 2px solid #730ca7; margin-top: 2em;">
+    <br>
+    <div style="border-radius: 15px 50px; border: 3px solid black; padding: 2em;">
+    <p style="text-align: justify;"><b>Conclusion RQ 2: </b></p>
+    <p style="text-align: justify;">First mentions of ‘sexual orientation, homosexuality’ appeared in the second half of the 20th century. The topic was not popular until the mid-1990s. Since then scientific interest in the topic was gradually going up during 2000s. In 2015-2016 it experienced peak of its popularity.  </p>
+
+    <p style="text-align: justify;">The general discourse gradually shifted towards issues of tolerance. Health studies has shifted from body diseases, HIV and alcohol problems to identity, discrimination and mental health problems. Religion discusses rights, marriage, love and desire, but not family and parenthood.</p>
+    <p style="text-align: justify;">In addition, in all three corpora we observe a change in terminology. The words community, groups have been replaced with LGBT and queer.</p>
+    </div>
+    </div>
+    
+  </div>   
+</div>
+
+<!-- Conclusion Container -->
+<div class="w3-container" id="conclusion" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONCLUSIONS, FURTHER DEVELOPMENT, OBSTACLES </span></h5>
+    <p style="text-align: justify;">Distant reading analysis with NLP and topic modeling techniques helped to identify the main contexts that have arisen around sexual orientation in the scientific communities of chosen fields. </p>
+    <p style="text-align: justify;">However, there is still room for further, more precise exploration. Bigrams and trigrams are available for deeper context capture, only unigrams are not helpful in finding words co-occurrence. Other topic clustering techniques may be applied and compared with LDA in order to build the best model. One may apply sentiment analysis to articles in order to understand and compare the sentiments prevailing in each field.  </p>
+    <img src="thanks.jpg" class="w3-image" style="width:100%">
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p class="w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+
+function accordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>
