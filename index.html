@@ -15,7 +15,7 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("rainbow2.jpg");
+  background-image: url("img/rainbow2.jpg");
   min-height: 75%;
 }
 
@@ -555,15 +555,15 @@ p, li {
 <br>   
 <br>       
       <p style="text-align: justify;">In addition, let’s visualize the relative term frequencies with word clouds.</p>
-      <img src="cloud_uni_religion.png" class="w3-image" style="width:100%">
+      <img src="img/cloud_uni_religion.png" class="w3-image" style="width:100%">
       <figcaption><b>Picture 1. Word Cloud (Religion studies dataset)</b></figcaption>
       <br>   
       <br>
-      <img src="cloud_uni_health.png" class="w3-image" style="width:100%">
+      <img src="img/cloud_uni_health.png" class="w3-image" style="width:100%">
       <figcaption><b>Picture 2. Word Cloud (Health studies dataset)</b></figcaption>
       <br>   
       <br>
-      <img src="cloud_uni_social.png" class="w3-image" style="width:100%">
+      <img src="img/cloud_uni_social.png" class="w3-image" style="width:100%">
       <figcaption><b>Picture 3. Word Cloud (Social science dataset)</b></figcaption>
       <br>   
       <br>      
@@ -607,7 +607,7 @@ p, li {
       <p style="text-align: justify;">Further, one may be interested in a more detailed exploration of the subtopics. By applying <b>LDA (Latent Dirichlet Allocation)</b>, one of the most popular topic modeling techniques, it is possible to divide the texts into groups of different sizes, and extract the most important terms from those groups. <em><u>It helps not only to obtain word frequencies but to see what terms appear together and identify more precise subtopics.</u></em></p>
       <p style="text-align: justify;">LDA topic modeling requires number of topics to be indicated in advance. Therefore, number of topics for the modeling has been chosen based on frequency list, coherence score calculations and researcher’s expertise in social science.</p>
       <p style="text-align: center;"><b>RELIGION STUDIES TOPICS</b></p>
-      <p style="text-align: justify;">Click <a href="LDA_Visualization_religion.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for religion studies dataset.</p>
+      <p style="text-align: justify;">Click <a href="LDA/LDA_Visualization_religion.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for religion studies dataset.</p>
       <p style="text-align: justify;">The religion studies dataset was divided into 5 topics. The first two are the biggest ones. Coherence Score:  -0.3652</p>
       <ul>
         <li><b>Subtopic 1: Family.</b> The first topic discuss important for religion concept of family, marriage, love, moral principles.  </li>
@@ -618,7 +618,7 @@ p, li {
       </ul>
 
       <p style="text-align: center;"><b>HEALTH STUDIES TOPICS</b></p>
-      <p style="text-align: justify;">Click <a href="LDA_Visualization_health.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for health studies dataset.</p>
+      <p style="text-align: justify;">Click <a href="LDA/LDA_Visualization_health.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for health studies dataset.</p>
       <p style="text-align: justify;">The health studies dataset was divided into 5 topics. The first is the biggest one. Coherence Score:  -0.5009</p>
 
       <ul>
@@ -630,7 +630,7 @@ p, li {
       </ul>
 
       <p style="text-align: center;"><b>SOCIAL SCIENCE TOPICS</b></p>
-      <p style="text-align: justify;">Click <a href="LDA_Visualization_social.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for social science dataset.</p>
+      <p style="text-align: justify;">Click <a href="LDA/LDA_Visualization_social.html" target="_blank" style="background-color: lightgreen">HERE</a> to explore the built LDA model for social science dataset.</p>
       <p style="text-align: justify;">The social science dataset was divided into 7 topics of almost equal sizes. The first two topics are overlapping according to the model. Coherence Score:  -0.5470</p>
 
       
@@ -671,17 +671,17 @@ p, li {
       <p style="text-align: justify;">This question is possible to answer by drawing the plot of articles frequencies by publication year.</p>      
       <p style="text-align: justify;">The first articles on homosexuality appear for each field at about the same period: second half of the 20th century: 19560-1970.</p>
       <p style="text-align: justify;"><b>For the religion studies,</b> the first rise of the topic was in 1998, the second one in 2008; both times the number of articles was doubled compared to the previous annual frequency. The sharp decline in the articles' frequency occured in 2017 when it dropped from 13 to 2 articles per year and remained the same untill 2020.</p>
-      <img src="docs_by_year_religion.png" class="w3-image" style="width:100%">
+      <img src="img/docs_by_year_religion.png" class="w3-image" style="width:100%">
       <figcaption><b>Picture 4. Plot of articles' frequencies by publication year (religion studies)</b></figcaption>
       <br>
       <br>
       <p style="text-align: justify;"><b>For the health studies,</b> the frequency of articles on sexual orientation ranged from 1 to 5 articles per year until 1989, when it was 6. In 1991, there were already 9 articles published, but later the frequency dropped again to 3-7 articles per year. The first noticeable rise occurred only in 2012 - about 13 articles, then in 2016 - 25 articles. In 2017-2020, 10-15 articles were published per year, then only 2 in 2021.</p>
-      <img src="docs_by_year_health.png" class="w3-image" style="width:100%">
+      <img src="img/docs_by_year_health.png" class="w3-image" style="width:100%">
       <figcaption><b>Picture 5. Plot of articles' frequencies by publication year (health studies)</b></figcaption>
       <br>
       <br>
       <p style="text-align: justify;"><b>For the social sciences,</b> a small fluctuation of 1-6 articles published per year occurred until about 1997, when the number of articles reached 10. Since 1997, the development of the topic has experienced a rapid upswing. 15 publications in 2000, 26 in 2004. A gradual decline until 2008, then again a smooth increase with a peak of 30 articles in 2015. In recent years, there has been a slight fluctuation between 15-25 articles per year and only 1 article in 2021.</p>
-      <img src="docs_by_year_social.png" class="w3-image" style="width:100%">
+      <img src="img/docs_by_year_social.png" class="w3-image" style="width:100%">
       <figcaption><b>Picture 6. Plot of articles' frequencies by publication year (social science)</b></figcaption>
       <p style="text-align: justify;"></p>
       <br>
@@ -988,7 +988,7 @@ p, li {
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONCLUSIONS, FURTHER DEVELOPMENT, OBSTACLES </span></h5>
     <p style="text-align: justify;">Distant reading analysis with NLP and topic modeling techniques helped to identify the main contexts that have arisen around sexual orientation in the scientific communities of chosen fields. </p>
     <p style="text-align: justify;">However, there is still room for further, more precise exploration. Bigrams and trigrams are available for deeper context capture, only unigrams are not helpful in finding words co-occurrence. Other topic clustering techniques may be applied and compared with LDA in order to build the best model. One may apply sentiment analysis to articles in order to understand and compare the sentiments prevailing in each field.  </p>
-    <img src="thanks.jpg" class="w3-image" style="width:100%">
+    <img src="img/thanks.jpg" class="w3-image" style="width:100%">
   </div>
 </div>
 
