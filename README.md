@@ -7,13 +7,13 @@ The project work is focused on the distant reading approach to literary studies.
 In particular, I studied which subtopics are related to the topic of sexual orientation, in which contexts sexual orientation has been studied, which issues have been addressed by the chosen disciplines.
 
 ## Repository content
-- <a href='https://github.com/AnastasiyaSopyryaeva/DTH/tree/main/scripts'>Scripts with data analysis process</a>
-- Detailed project description is reported via GitHub pages on the <a href='https://anastasiyasopyryaeva.github.io/Text-Analysis-of-Scholarly-Artices/'>following website</a>
+- <a href='https://github.com/AnastasiyaSopyryaeva/DTH/tree/main/scripts' target='_blank'>Scripts with data analysis process</a>
+- Detailed project description is reported via GitHub pages on the <a href='https://anastasiyasopyryaeva.github.io/Text-Analysis-of-Scholarly-Artices/' target='_blank'>following website</a>
 
 ## Resources and tecchnologies used for the project
 
 ### Datasets
-The datasets were downloaded from <a href="https://www.jstor.org/action/showAdvancedSearch">JSTOR digital library</a> according to the specified settings as jsonl files. 
+The datasets were downloaded from <a href="https://www.jstor.org/action/showAdvancedSearch" target='_blank'>JSTOR digital library</a> according to the specified settings as jsonl files. 
 The datasets have been selected for their size and complexity from JSTOR digital library and are used exclusively for educational purpose.
 
 ### Tools
