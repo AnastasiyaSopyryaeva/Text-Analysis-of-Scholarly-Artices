@@ -8,7 +8,7 @@ In particular, I studied which subtopics are related to the topic of sexual orie
 
 ## Repository content
 - <a href='https://github.com/AnastasiyaSopyryaeva/DTH/tree/main/scripts'>Scripts with data analysis process</a>
-- Detailed project description is reported via GitHub pages on the <a href='https://anastasiyasopyryaeva.github.io/DTH/'>following website</a>
+- Detailed project description is reported via GitHub pages on the <a href='https://anastasiyasopyryaeva.github.io/Text-Analysis-of-Scholarly-Artices/'>following website</a>
 
 ## Resources and tecchnologies used for the project
 
